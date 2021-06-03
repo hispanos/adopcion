@@ -46,4 +46,14 @@ const onClickCategory = (e) => {
 const getPetsByCategory = async (categoryId) => {
     const listPets = await pets.getPets(categoryId);
     pets.renderListPets(listPets);
+
+    const divPet = document.querySelectorAll('.pet');
+    divPet.forEach(div => {
+        div.addEventListener('click', (e) => { onClickPet(e) })
+    });
+}
+
+const onClickPet = (e) => {
+    const idPet = e.target.parentElement.getAttribute('key');
+    window.location.href = `./detailsPets.html?id=${idPet}`;
 }

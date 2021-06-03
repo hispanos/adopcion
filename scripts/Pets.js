@@ -20,7 +20,7 @@ export default class Pets {
         this.containerPetList.innerHTML = '';
         listPets.forEach(pet => {
             const div = `
-            <div class="pet level-1">
+            <div class="pet level-1" key=${pet.id}>
                 <div class="background-pet"></div>
                 <img src="${pet.image}" alt="${pet.name}" class="img-pet">
                 <span class="pet-name">${pet.name}</span>
