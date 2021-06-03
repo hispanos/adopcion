@@ -156,6 +156,10 @@ body {
     margin-bottom: 10px;
 }
 
+.category-inactive {
+    opacity: 0.5;
+}
+
 .category:hover {
     cursor: pointer;
 }
@@ -181,6 +185,70 @@ body {
     line-height: 24px;
     letter-spacing: 0.005em;
     margin-left: 10px;
+}
+
+#container-pets-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px 20px;
+}
+
+.pet {
+    width: 156px;
+    height: 250px;
+    flex-grow: 0;
+    margin: 24px 5px;
+    position: relative;
+}
+
+.pet:hover {
+    cursor: pointer;
+}
+
+.background-pet {
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%);
+    border-radius: 16px;
+    width: 156px;
+    height: 250px;
+    z-index: 10;
+}
+
+.img-pet {
+    width: 156px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    z-index: -1;
+    filter: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%);
+}
+
+.pet-name {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    z-index: 20;
+}
+
+.pet-race {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    z-index: 20;
 }
 
 @media (min-width: 600px) {
