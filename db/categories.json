@@ -1,0 +1,14 @@
+{
+    "categories": [
+        {
+            "id": "category-dogs",
+            "name": "Perros",
+            "image": "category-dogs.png"
+        },
+        {
+            "id": "category-cats",
+            "name": "Gatos",
+            "image": "category-cats.png"
+        }
+    ]
+}
