@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (URI === '/select-category.html' || URI === '/adopcion/select-category.html') {
         renderCategories();
     }
+
+    if(URI === '/detailsPets.html' || URI === '/adopcion/detailsPets.html') {
+        getDetailsPet();
+    }
     
 });
 
@@ -56,4 +60,11 @@ const getPetsByCategory = async (categoryId) => {
 const onClickPet = (e) => {
     const idPet = e.target.parentElement.getAttribute('key');
     window.location.href = `./detailsPets.html?id=${idPet}`;
+}
+
+const getDetailsPet = async () => {
+    let params = new URLSearchParams(location.search);
+    const idPet = parseInt(params.get('id'));
+    const details = await pets.getDetails(idPet);
+    pets.renderDetails(details);
 }
