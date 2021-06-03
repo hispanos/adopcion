@@ -75,6 +75,8 @@ body {
     border-radius: 98px;
     width: 80%;
     height: 30px;
+    position: sticky;
+    bottom: 20px;
 }
 
 .title-select-options {
