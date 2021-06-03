@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     //Render the categories List
-    renderCategories();
+    if (URI === '/select-category.html' || URI === '/adopcion/select-category.html') {
+        renderCategories();
+    }
+    
 });
 
 const renderCategories = async () => {
@@ -36,6 +39,7 @@ const onClickCategory = (e) => {
     }else if (element.parentElement.parentElement.id) {
         id = element.parentElement.parentElement.id
     }
+    categories.changeStatusCategory(id); //Change the class for active
     getPetsByCategory(id);
 }
 
