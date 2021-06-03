@@ -1,0 +1,223 @@
+{
+    "dogs": [
+        {
+            "id": 1,
+            "race": "Pastor Alemán",
+            "name": "Pascual",
+            "description": "Esta mal",
+            "gender": "Female",
+            "age": "6 Meses",
+            "address": "Se encuentra en robledo cerca a la quintana",
+            "feature": "Tiene el pelo cafe , ademas tiene una patica mala",
+            "personality": [
+                "Juguetón",
+                "Tierno"
+            ],
+            "image": "https://www.elpaisdelosjovenes.com/wp-content/uploads/2015/05/03_02.jpg"
+        },
+        {
+            "id": 2,
+            "race": "Bulldog",
+            "name": "Sacha",
+            "description": "Tiene un ojo herido",
+            "gender": "Female",
+            "age": "12 Meses",
+            "address": "Esta en aranjuez por el parque",
+            "feature": "Es un perro criollo y tiene un ojo herido",
+            "personality": [
+                "Juguetón",
+                "Inquieto",
+                "Tierno"
+            ],
+            "image": "http://www.cuidadosdemascotas.com/wp-content/uploads/2015/06/perro_herido_cuidados_mascotas-300x225.jpg"
+        },
+        {
+            "id": 3,
+            "race": "Labrador Retriever",
+            "name": "scott",
+            "description": "Esta muy herido",
+            "gender": "Male",
+            "age": "24 Meses",
+            "address": "Esta en belen cerca a la udem",
+            "feature": "Es un labrador viejito cola cafe",
+            "personality": [
+                "Juguetón",
+                "Inquieto",
+                "Tierno"
+            ],
+            "image": "http://www.perrosdebusqueda.es/wp-content/uploads/2015/11/Zarpas-herido.jpg"
+        },
+        {
+            "id": 4,
+            "race": "Poodle",
+            "name": "Toby",
+            "description": "Para adopcion",
+            "gender": "Male",
+            "age": "15 Meses",
+            "address": "Esta en belen cerca a la udem",
+            "feature": "Tiene el pelo cafe, ademas tiene una patica mala",
+            "personality": [
+                "Juguetón",
+                "Inquieto"
+            ],
+            "image": "http://blog.feebbo.com/wp-content/uploads/2015/10/Im%C3%A1genes-para-WhatsApp-de-Animales-2.jpg"
+        },
+        {
+            "id": 5,
+            "race": "Chihuahua",
+            "name": "Boxer",
+            "description": "Se ve que tiene dueño esta muy bien ",
+            "gender": "Male",
+            "age": "18 Meses",
+            "address": "Lo vi el jardin botanico por el lago",
+            "feature": "Es cafe con blanco",
+            "personality": [
+                "Tierno",
+                "Inquieto"
+            ],
+            "image": "http://3.bp.blogspot.com/-XtqcDS3NACY/TyeEFEwPvKI/AAAAAAAAFA0/CPl8ilSKwCI/s200/Boxer+1.JPG"
+        },
+        {
+            "id": 6,
+            "race": "Husky Siberiano",
+            "name": "NN",
+            "description": "Lo dejaron en una caja , con dos piernas rotas",
+            "gender": "Female",
+            "age": "24 Meses",
+            "address": "Esta en la estacion del metro floresta",
+            "feature": "Tiene el pelo cafe con negro y ya esta algo viejito",
+            "personality": [
+                "Juguetón",
+                "Tierno"
+            ],
+            "image": "http://cde.elcomercio.pe/66/ima/0/0/6/7/0/670997.jpg"
+        },
+        {
+            "id": 7,
+            "race": "Galgo Inglés",
+            "name": "Toby",
+            "description": "Parece que tiene dueño por que esta muy bien ",
+            "gender": "Male",
+            "age": "3 Meses",
+            "address": "lo vi por el exito de robledo",
+            "feature": "Es un perro criollo de color cafe de raza media",
+            "personality": [
+                "Juguetón",
+                "Inquieto",
+                "Tierno"
+            ],
+            "image": "http://img.informador.com.mx/biblioteca/image/370x277/852/851252.jpg"
+        },
+        {
+            "id": 8,
+            "race": "Criollo",
+            "name": "Kiko",
+            "description": "En adopcion",
+            "gender": "Male",
+            "age": "8 Meses",
+            "address": "Estoy en bello",
+            "feature": "Perro pitbull",
+            "personality": [
+                "Juguetón",
+                "Inquieto",
+                "Tierno"
+            ],
+            "image": "http://i58.photobucket.com/albums/g254/big-T1/pitbull_pup11.jpg"
+        }
+    ],
+    "cats": [
+        {
+            "id": 1,
+            "race": "Siamés",
+            "name": "Icaro",
+            "description": "Es un gatico cachorro que esta en la calle",
+            "gender": "Male",
+            "age": "19 Meses",
+            "address": "Esta en belen por los lados de la udem",
+            "feature": "Es pequeño y el pelo lo tiene negro",
+            "personality": [
+                "Juguetón",
+                "Inquieto",
+                "Tierno"
+            ],
+            "image": "http://static.consumer.es/www/imgs/2013/07/adoptar-gatos-cachorros-felinos-animales-mascotas-adopcion-acogida-art.jpg"
+        },
+        {
+            "id": 2,
+            "race": "Criollo",
+            "name": "Nica",
+            "description": "Es una gatica que acabo de dar a luz",
+            "gender": "Female",
+            "age": "13 Meses",
+            "address": "Parque del poblado",
+            "feature": "Es una gata blanca y tiene 6 gaticos cachorros",
+            "personality": [
+                "Juguetón",
+                "Tierno"
+            ],
+            "image": "https://lh4.googleusercontent.com/-PKoAqrneSVg/TyPbkz9VqDI/AAAAAAAAAZg/QycSgXbOPUM/s800/Familia%2520de%2520gatos%2520Korat%2520%2528Gato%2520de%2520la%2520suerte%252C%2520Gat%2520Korat%252C%2520Si-sawaat%252C%2520Gat%2520de%2520la%2520Sort%252C%2520Korat-Katze%252C%2520Gatto%2520Korat%2529.jpg"
+        },
+        {
+            "id": 3,
+            "race": "Persa",
+            "name": "Sas",
+            "description": "Para dar en adopcion",
+            "gender": "Female",
+            "age": "5 Meses",
+            "address": "Esta en el barrio los colores",
+            "feature": "Tiene el cabello gris con blanco ",
+            "personality": [
+                "Inquieto",
+                "Tierno"
+            ],
+            "image": "http://misanimales.com/wp-content/uploads/2015/01/cascabel-gato.jpg"
+        },
+        {
+            "id": 4,
+            "race": "Bengala",
+            "name": "NN",
+            "description": "Esta mal",
+            "gender": "Female",
+            "age": "7 Meses",
+            "address": "lo vi por la canalizacion del estadio",
+            "feature": "Tiene el pelo cafe con blanco , ademas tiene una patica mala",
+            "personality": [
+                "Juguetón",
+                "Inquieto"
+            ],
+            "image": "http://mascotas-static.hola.com/gatos/files/2012/10/stray-cat-169113_1280.jpg"
+        },
+        {
+            "id": 5,
+            "race": "Ragdoll",
+            "name": "Tobias",
+            "description": "Para adopcion",
+            "gender": "Male",
+            "age": "36 Meses",
+            "address": "en la perla",
+            "feature": "Es un cachorro",
+            "personality": [
+                "Juguetón",
+                "Inquieto",
+                "Tierno"
+            ],
+            "image": "http://g.cdn.ecn.cl/fenomenos-paranormales/files/2015/07/gatos-adivinos.jpg"
+        },
+        {
+            "id": 6,
+            "race": "Esfinge",
+            "name": "sin name",
+            "description": "Para dar en adopcion",
+            "gender": "Female",
+            "age": "4 Meses",
+            "address": "Esta en belen cerca al parque",
+            "feature": "Tiene apenas un mes de nacido",
+            "personality": [
+                "Juguetón",
+                "Inquieto",
+                "Tierno"
+            ],
+            "image": "http://ecoosfera.com/wp-content/imagees/0012-O-miado-dos-gatos-1-1024x480.jpg"
+        }
+    ]
+}
