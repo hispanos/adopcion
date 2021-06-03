@@ -1,6 +1,8 @@
 body {
     background-color: #FEC7D7;
     font-family: "Nunito", sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 #container {
@@ -9,10 +11,23 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    width: 400px;
+    box-sizing: border-box;
 }
 
-.hidden {
-    display: none;
+#logo-big {
+    animation-duration: 5s;
+    animation-name: logoBigger;
+}
+
+@keyframes logoBigger {
+    from {
+      width: 31px;
+    }
+  
+    to {
+      width: 155px;
+    }
 }
 
 .content-waiting {
@@ -40,10 +55,14 @@ body {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
+    margin: 8px 0px;
+}
+
+.img-animals-waiting {
+    margin: 33px 0px;
 }
 
 .btn-next-waiting {
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -54,6 +73,13 @@ body {
     color: #FFF;
     text-decoration: none;
     border-radius: 98px;
-    width: 327px;
+    width: 80%;
     height: 30px;
+}
+
+@media (min-width: 600px) {
+    #container {
+        border: 5px solid #0E172C;
+        border-radius: 20px;
+    }
 }
