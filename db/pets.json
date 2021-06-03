@@ -1,7 +1,8 @@
 {
-    "category-dogs": [
+    "pets": [
         {
             "id": 1,
+            "categoryId": "category-dogs",
             "race": "Pastor Alemán",
             "name": "Pascual",
             "description": "Esta mal",
@@ -17,7 +18,8 @@
         },
         {
             "id": 2,
-            "race": "Bulldog",
+            "categoryId": "category-dogs",
+            "race": "Bulldogs",
             "name": "Sacha",
             "description": "Tiene un ojo herido",
             "gender": "Female",
@@ -29,10 +31,11 @@
                 "Inquieto",
                 "Tierno"
             ],
-            "image": "http://www.cuidadosdemascotas.com/wp-content/uploads/2015/06/perro_herido_cuidados_mascotas-300x225.jpg"
+            "image": "https://www.ecured.cu/images/2/24/Bulldog.JPG"
         },
         {
             "id": 3,
+            "categoryId": "category-dogs",
             "race": "Labrador Retriever",
             "name": "scott",
             "description": "Esta muy herido",
@@ -49,6 +52,7 @@
         },
         {
             "id": 4,
+            "categoryId": "category-dogs",
             "race": "Poodle",
             "name": "Toby",
             "description": "Para adopcion",
@@ -60,10 +64,11 @@
                 "Juguetón",
                 "Inquieto"
             ],
-            "image": "http://blog.feebbo.com/wp-content/uploads/2015/10/Im%C3%A1genes-para-WhatsApp-de-Animales-2.jpg"
+            "image": "https://perro.shop/wp-content/uploads/Caniche-Poodle.jpg"
         },
         {
             "id": 5,
+            "categoryId": "category-dogs",
             "race": "Chihuahua",
             "name": "Boxer",
             "description": "Se ve que tiene dueño esta muy bien ",
@@ -79,6 +84,7 @@
         },
         {
             "id": 6,
+            "categoryId": "category-dogs",
             "race": "Husky Siberiano",
             "name": "NN",
             "description": "Lo dejaron en una caja , con dos piernas rotas",
@@ -94,6 +100,7 @@
         },
         {
             "id": 7,
+            "categoryId": "category-dogs",
             "race": "Galgo Inglés",
             "name": "Toby",
             "description": "Parece que tiene dueño por que esta muy bien ",
@@ -106,10 +113,11 @@
                 "Inquieto",
                 "Tierno"
             ],
-            "image": "http://img.informador.com.mx/biblioteca/image/370x277/852/851252.jpg"
+            "image": "https://perro.shop/wp-content/uploads/greyhound-galgo-ingles.jpg"
         },
         {
             "id": 8,
+            "categoryId": "category-dogs",
             "race": "Criollo",
             "name": "Kiko",
             "description": "En adopcion",
@@ -123,11 +131,10 @@
                 "Tierno"
             ],
             "image": "http://i58.photobucket.com/albums/g254/big-T1/pitbull_pup11.jpg"
-        }
-    ],
-    "category-cats": [
+        },
         {
-            "id": 1,
+            "id": 9,
+            "categoryId": "category-cats",
             "race": "Siamés",
             "name": "Icaro",
             "description": "Es un gatico cachorro que esta en la calle",
@@ -143,7 +150,8 @@
             "image": "http://static.consumer.es/www/imgs/2013/07/adoptar-gatos-cachorros-felinos-animales-mascotas-adopcion-acogida-art.jpg"
         },
         {
-            "id": 2,
+            "id": 10,
+            "categoryId": "category-cats",
             "race": "Criollo",
             "name": "Nica",
             "description": "Es una gatica que acabo de dar a luz",
@@ -155,10 +163,11 @@
                 "Juguetón",
                 "Tierno"
             ],
-            "image": "https://lh4.googleusercontent.com/-PKoAqrneSVg/TyPbkz9VqDI/AAAAAAAAAZg/QycSgXbOPUM/s800/Familia%2520de%2520gatos%2520Korat%2520%2528Gato%2520de%2520la%2520suerte%252C%2520Gat%2520Korat%252C%2520Si-sawaat%252C%2520Gat%2520de%2520la%2520Sort%252C%2520Korat-Katze%252C%2520Gatto%2520Korat%2529.jpg"
+            "image": "https://www.dogalize.com/wp-content/uploads/2017/02/image1.jpg"
         },
         {
-            "id": 3,
+            "id": 11,
+            "categoryId": "category-cats",
             "race": "Persa",
             "name": "Sas",
             "description": "Para dar en adopcion",
@@ -173,7 +182,8 @@
             "image": "http://misanimales.com/wp-content/uploads/2015/01/cascabel-gato.jpg"
         },
         {
-            "id": 4,
+            "id": 12,
+            "categoryId": "category-cats",
             "race": "Bengala",
             "name": "NN",
             "description": "Esta mal",
@@ -188,7 +198,8 @@
             "image": "http://mascotas-static.hola.com/gatos/files/2012/10/stray-cat-169113_1280.jpg"
         },
         {
-            "id": 5,
+            "id": 13,
+            "categoryId": "category-cats",
             "race": "Ragdoll",
             "name": "Tobias",
             "description": "Para adopcion",
@@ -204,7 +215,8 @@
             "image": "http://g.cdn.ecn.cl/fenomenos-paranormales/files/2015/07/gatos-adivinos.jpg"
         },
         {
-            "id": 6,
+            "id": 14,
+            "categoryId": "category-cats",
             "race": "Esfinge",
             "name": "sin name",
             "description": "Para dar en adopcion",
@@ -217,7 +229,7 @@
                 "Inquieto",
                 "Tierno"
             ],
-            "image": "http://ecoosfera.com/wp-content/imagees/0012-O-miado-dos-gatos-1-1024x480.jpg"
+            "image": "https://i1.wp.com/clubdelgato.com/wp-content/uploads/2020/10/640px-Cat_Sphynx._Kittens._img_11.jpg?fit=640%2C447&ssl=1"
         }
     ]
 }
