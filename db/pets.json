@@ -1,5 +1,5 @@
 {
-    "dogs": [
+    "category-dogs": [
         {
             "id": 1,
             "race": "Pastor Alemán",
@@ -125,7 +125,7 @@
             "image": "http://i58.photobucket.com/albums/g254/big-T1/pitbull_pup11.jpg"
         }
     ],
-    "cats": [
+    "category-cats": [
         {
             "id": 1,
             "race": "Siamés",
