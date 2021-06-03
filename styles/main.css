@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6, span, p {
     margin-right: 10px;
 }
 
-.container-categories {
+#container-categories {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
