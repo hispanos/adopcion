@@ -6,10 +6,10 @@ export default class Categories {
     }
 
     async getCategories() {
-        const URI = '../db/categories.json'
+        const URI = 'https://my-json-server.typicode.com/hispanos/db-adopcion/categories'
         const resp = await fetch(URI);
         if (resp.ok) {
-            const {categories} = await resp.json();
+            const categories = await resp.json();
             //Save the categories at the array's object
             this.categories = categories;
             return categories;

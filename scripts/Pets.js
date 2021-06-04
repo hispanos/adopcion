@@ -6,10 +6,10 @@ export default class Pets {
     }
 
     async getPets(categoryId) {
-        const URI = '../db/pets.json'
+        const URI = 'https://my-json-server.typicode.com/hispanos/db-adopcion/pets'
         const resp = await fetch(URI);
         if (resp.ok) {
-            const {pets} = await resp.json();
+            const pets = await resp.json();
             const filter = pets.filter((item) => item.categoryId === categoryId)
             return filter
         }else{
