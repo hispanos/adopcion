@@ -205,26 +205,27 @@ h1, h2, h3, h4, h5, h6, span, p, img {
 }
 
 #container-pets-list {
-    display: grid;
-    grid-template-columns: repeat(2, 156px);
-    grid-gap: 10px;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0px;
     margin: 0px 20px;
 }
 
 .level-1 {
-    grid-row-end: span 2;
+    padding: 0px;
 }
 
 .level-2 {
-    grid-row-end: span 1;
+    padding: 0px;
+    margin-top: 40px !important;
 }
 
 .pet {
     width: 156px;
     height: 250px;
-    margin: 24px 0px;
+    margin: 10px 0px;
     position: relative;
 }
 
