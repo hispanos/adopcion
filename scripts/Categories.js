@@ -6,7 +6,7 @@ export default class Categories {
     }
 
     async getCategories() {
-        const URI = '../db/categories.json'
+        const URI = 'https://evircol.com/adopcion/db/categories.json'
         const resp = await fetch(URI);
         if (resp.ok) {
             const {categories} = await resp.json();
