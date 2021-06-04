@@ -47,7 +47,13 @@ export default class Pets {
     }
 
     renderDetails(details) {
-        console.log(details)
+        //If details is empty show a message
+        if (Object.keys(details).length === 0) {
+            const message = document.createElement('h3');
+            message.innerText = 'No has seleccionado una mascota válida';
+            document.getElementById('container').appendChild(message);
+            return;
+        }
     }
 
 }
