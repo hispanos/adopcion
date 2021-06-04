@@ -67,4 +67,13 @@ const getDetailsPet = async () => {
     const idPet = parseInt(params.get('id'));
     const details = await pets.getDetails(idPet);
     pets.renderDetails(details);
+
+    const btnFavorite = document.getElementById('favorite-heart');
+    btnFavorite.addEventListener('click', onClickFavorite )
+}
+
+const onClickFavorite = () => {
+    let params = new URLSearchParams(location.search);
+    const idPet = parseInt(params.get('id'));
+    console.log('Clickeaste Favorito Id: '+idPet);
 }

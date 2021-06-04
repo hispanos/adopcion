@@ -72,8 +72,8 @@ export default class Pets {
                         <h4 class="name-details">${details.name}</h4>
                         <img src="./images/${imageGender}" alt="${details.gender}" class="img-gender-details">
                     </div>
-                    <div class="favorite-details">
-                        <img src="./images/heart-favorite.png" alt="Favorito" class="img-favorite">
+                    <div class="favorite-details" id="favorite-heart">
+                        <img src="./images/heart-favorite-clicked.png" alt="Favorito" class="img-favorite">
                     </div>
                 </div>
                 <div class="details-race-age">

@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6, span, p, img {
    user-select: none; 
 }
 
+.hidden {
+    display: none;
+}
+
 #container {
     display: flex;
     flex-direction: column;
@@ -20,6 +24,7 @@ h1, h2, h3, h4, h5, h6, span, p, img {
     min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 #logo-big {
@@ -350,6 +355,18 @@ h1, h2, h3, h4, h5, h6, span, p, img {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+}
+
+.favorite-details:hover > .img-favorite {
+    opacity: 100%;
+}
+
+.img-favorite {
+    opacity: 50%;
+}
+
+.img-favorite-active {
+    opacity: 100%;
 }
 
 .favorite-details:hover {
