@@ -33,11 +33,11 @@ export default class Pets {
     }
 
     async getDetails(idPet) {
-        const URI = '../db/pets.json'
+        const URI = 'https://my-json-server.typicode.com/hispanos/db-adopcion/pets'
         const resp = await fetch(URI);
         let details = {};
         if (resp.ok) {
-            const {pets} = await resp.json();
+            const pets = await resp.json();
             const filter = pets.filter((item) => item.id === idPet)
             //If the idPet exist return the object unique
             filter.length >= 1 ? details = filter[0] : details;
