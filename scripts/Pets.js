@@ -115,13 +115,13 @@ export default class Pets {
             </div>
             <div class="footer-details">
                 <div class="author-details">
-                    <img src="./images/author.png" alt="Autor" class="img-author-details">
+                    <img src="./images/${details.author.image}" alt="Autor" class="img-author-details">
                     <div class="info-author-details">
                         <span class="by-author-details">Publicado por:</span>
-                        <span class="name-author-details">Mailer Martínez</span>
+                        <span class="name-author-details">${details.author.name}</span>
                     </div>
                 </div>
-                <a href="./contact.html" class="btn-contact">Contactar</a>
+                <a href="./messagesDetail.html?idAuthor=${details.author.id}" class="btn-contact">Contactar</a>
             </div>
         </div>
         `;
