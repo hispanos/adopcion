@@ -1,8 +1,13 @@
 export default class Pets {
 
     constructor() {
+        this.favorites = '';
         this.containerPetList = document.getElementById('container-pets-list');
         this.container = document.getElementById('container');
+    }
+
+    setFavorites(model) {
+        this.favorites = model;
     }
 
     async getPets(categoryId) {
@@ -62,6 +67,11 @@ export default class Pets {
         let imageGender = 'gender-male.png';
         details.gender === 'Female' ? imageGender = 'gender-female.png' : imageGender
 
+        //Set class active or inactive to favorite
+        const isFavorite = this.favorites.getFavoriteById(details.id);
+        let styleClass = 'img-favorite';
+        isFavorite ? styleClass = 'img-favorite-active' : isFavorite
+
         const HTML = `
         <div class="container-img-details">
             <img src="${details.image}" alt="${details.name}" class="img-details">
@@ -75,7 +85,7 @@ export default class Pets {
                         <img src="./images/${imageGender}" alt="${details.gender}" class="img-gender-details">
                     </div>
                     <div class="favorite-details" id="favorite-heart">
-                        <img src="./images/heart-favorite-clicked.png" alt="Favorito" class="img-favorite">
+                        <img src="./images/heart-favorite-clicked.png" alt="Favorito" class="${styleClass}" id="img-favorite">
                     </div>
                 </div>
                 <div class="details-race-age">

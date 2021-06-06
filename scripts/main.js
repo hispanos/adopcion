@@ -1,9 +1,11 @@
 import Pets from './Pets.js';
 import Categories from './Categories.js'
+import Favorites from './Favorites.js';
 
 const URI = window.location.pathname;
 const pets = new Pets();
 const categories = new Categories();
+const favorites = new Favorites();
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,6 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
         getDetailsPet();
     }
     
+    //Set Pets Object as model to favorites
+    favorites.setModel(pets);
+    pets.setFavorites(favorites);
+
 });
 
 const renderCategories = async () => {
@@ -75,5 +81,5 @@ const getDetailsPet = async () => {
 const onClickFavorite = () => {
     let params = new URLSearchParams(location.search);
     const idPet = parseInt(params.get('id'));
-    console.log('Clickeaste Favorito Id: '+idPet);
+    favorites.setFavorite(idPet);
 }
