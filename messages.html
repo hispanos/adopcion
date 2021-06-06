@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Adopcion</title>
+</head>
+<body>
+
+    <div id="container">
+        <div class="container-select">
+            <h2 class="title-select-options">Mensajes</h2>
+            <div id="container-messages">
+                <!-- Filled from Javascript -->
+                <div class="div-message">
+                    <img src="./images/author.png" alt="Perfil Usuario" class="img-div-message">
+                    <div class="rigth-div-message">
+                        <div class="person-time-div-message">
+                            <h4 class="person-div-message">Nombre del Contacto</h4>
+                            <span class="time-div-message">8:36</span>
+                        </div>
+                        <p class="text-div-message">Aquí va de manera muy corta el mensaje</p>
+                    </div>
+                    <img src="./images/next.png" alt="Ver Mensaje" class="arrow-div-message">
+                </div>
+
+                <div class="div-message">
+                    <img src="./images/author.png" alt="Perfil Usuario" class="img-div-message">
+                    <div class="rigth-div-message">
+                        <div class="person-time-div-message">
+                            <h4 class="person-div-message">Nombre del Contacto</h4>
+                            <span class="time-div-message">8:36</span>
+                        </div>
+                        <p class="text-div-message">Aquí va de manera muy corta el mensaje  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestias ea, et deleniti ipsum itaque eius explicabo eligendi earum distinctio ducimus velit, facere cupiditate vel, perferendis adipisci autem consectetur omnis.</p>
+                    </div>
+                    <img src="./images/next.png" alt="Ver Mensaje" class="arrow-div-message">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-menu">
+            <a href="./select-category.html" class="menu-inactive"><img src="./images/home-inactive.png" alt="Home"></a>
+            <a href="#" class="menu-active"><img src="./images/chat-active.png" alt="Messages" class="menu-img-active">Mensajes</a>
+            <a href="./favorites.html" class="menu-inactive"><img src="./images/favorite-inactive.png" alt="Favorites"></a>
+            <a href="#" class="menu-inactive"><img src="./images/profile-inactive.png" alt="Profile"></a>
+        </div>
+    </div>
+    
+    <script src="./scripts/main.js" type="module"></script>
+</body>
+</html>

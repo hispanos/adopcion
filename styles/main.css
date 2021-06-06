@@ -117,6 +117,7 @@ h1, h2, h3, h4, h5, h6, span, p, img {
 .container-select {
     flex-grow: 1;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .container-menu {
@@ -536,6 +537,91 @@ h1, h2, h3, h4, h5, h6, span, p, img {
     align-items: center;
 }
 
+#container-messages {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.div-message {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 20px 8px;
+    margin: 10px 20px;
+    height: 80px;
+}
+
+.div-message:hover {
+    cursor: pointer;
+}
+
+.img-div-message {
+    border: 3px solid #85D1CE;
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.rigth-div-message {
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.person-time-div-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.person-div-message {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #0E172C;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.time-div-message {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.004em;
+    color: #535353;
+}
+
+.text-div-message {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    color: #535353;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 38px;
+}
+
+.arrow-div-message {
+    margin: 0 8px;
+}
 
 
 @media (min-width: 600px) {
