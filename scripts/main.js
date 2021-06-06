@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if(URI === '/detailsPets.html' || URI === '/adopcion/detailsPets.html') {
         getDetailsPet();
     }
+
+    if(URI === '/favorites.html' || URI === '/adopcion/favorites.html') {
+        renderFavorites();
+    }
     
     //Set Pets Object as model to favorites
     favorites.setModel(pets);
@@ -82,4 +86,14 @@ const onClickFavorite = () => {
     let params = new URLSearchParams(location.search);
     const idPet = parseInt(params.get('id'));
     favorites.setFavorite(idPet);
+}
+
+const renderFavorites = () => {
+    const listPets = favorites.getFavorites();
+    pets.renderListPets(listPets);
+
+    const divPet = document.querySelectorAll('.pet');
+    divPet.forEach(div => {
+        div.addEventListener('click', (e) => { onClickPet(e) })
+    });
 }
