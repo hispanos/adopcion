@@ -58,9 +58,13 @@ export default class Favorites {
         if (isFavorite) {
             image.classList.remove('img-favorite');
             image.classList.add('img-favorite-active');
+            //Show alert:
+            iqwerty.toast.toast('Agregado a Favoritos');
         }else {
             image.classList.remove('img-favorite-active');
             image.classList.add('img-favorite');
+            //Show alert:
+            iqwerty.toast.toast('Eliminado de Favoritos');
         }
     }
 
