@@ -537,7 +537,7 @@ h1, h2, h3, h4, h5, h6, span, p, img {
     align-items: center;
 }
 
-#container-messages {
+#container-list-messages {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -686,7 +686,7 @@ h1, h2, h3, h4, h5, h6, span, p, img {
     display: flex;
     flex-direction: column;
     margin-top: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .time-message {
@@ -705,7 +705,7 @@ h1, h2, h3, h4, h5, h6, span, p, img {
 .body-message {
     border-radius: 16px;
     margin: 4px 0px;
-    width: 70%;
+    max-width: 70%;
     padding: 10px;
     font-style: normal;
     font-weight: normal;
