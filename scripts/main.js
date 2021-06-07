@@ -134,4 +134,26 @@ const renderMessagesContent = async () => {
 
 const renderChats = () => {
     messages.renderChats();
+    //Event click over chat
+    const divChat = document.querySelectorAll('.div-message');
+    divChat.forEach(element => {
+        element.addEventListener('click', (e) => { onClickChat(e) })
+    });
+}
+
+const onClickChat = (e) => {
+    let idAuthor = '';
+    if (e.target.getAttribute('key')) {
+        idAuthor = e.target.getAttribute('key');
+    }else {
+        if (e.target.parentElement.getAttribute('key')) {
+            idAuthor = e.target.parentElement.getAttribute('key');
+        }else if(e.target.parentElement.parentElement.getAttribute('key')) {
+            idAuthor = e.target.parentElement.parentElement.getAttribute('key');
+        }else if(e.target.parentElement.parentElement.parentElement.getAttribute('key')) {
+            idAuthor = e.target.parentElement.parentElement.parentElement.getAttribute('key')
+        }
+    }
+
+    window.location.href = `./messagesDetail.html?idAuthor=${idAuthor}`;
 }
