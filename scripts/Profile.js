@@ -37,6 +37,8 @@ export default class Profile {
         localStorage.setItem('profile', JSON.stringify(this.profile));
         //Update the view
         this.renderProfile();
+        //Show alert:
+        iqwerty.toast.toast('Datos actualizados exitosamente');
     }
 
     //Update the image profile
