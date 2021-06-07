@@ -2,12 +2,14 @@ import Pets from './Pets.js';
 import Categories from './Categories.js'
 import Favorites from './Favorites.js';
 import Messages from './Messages.js';
+import Authors from './Authors.js';
 
 const URI = window.location.pathname;
 const pets = new Pets();
 const categories = new Categories();
 const favorites = new Favorites();
 const messages = new Messages();
+const authors = new Authors();
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -36,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //Set Pets Object as model to favorites
     favorites.setModel(pets);
     pets.setFavorites(favorites);
+    messages.setAuthors(authors);
 
 });
 
@@ -104,8 +107,18 @@ const renderFavorites = () => {
     });
 }
 
-const renderMessagesContent = () => {
+const renderMessagesContent = async () => {
     let params = new URLSearchParams(location.search);
     const idAuthor = parseInt(params.get('idAuthor'));
+    const author = await authors.getAuthorsById(idAuthor);
+    messages.renderHeaderMessage(author);
     messages.renderMessages(idAuthor);
+
+    const inputText = document.getElementById('inputText');
+    inputText.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            const message = inputText.value;
+            messages.sendMessage(message, author);
+        }
+    })
 }

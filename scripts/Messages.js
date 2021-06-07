@@ -1,6 +1,8 @@
 export default class Messages {
 
     constructor() {
+        this.authors = '';
+        this.headerMessages = document.getElementById('header-details-message');
         this.containerMessages = document.getElementById('container-messages');
         this.messages = JSON.parse(localStorage.getItem('messages'));
         if (!this.messages || this.messages.length < 1) {
@@ -26,6 +28,19 @@ export default class Messages {
                 }
             ];
         }
+    }
+
+    setAuthors(model) {
+        this.authors = model;
+    }
+
+    renderHeaderMessage(author) {
+        const HTML = `
+        <a href="./messages.html" class="link-back"><img src="./images/back.png" alt="Atrás"></a>
+        <img src="./images/${author.image}" alt="Author" class="img-header-deatails-message" id="image-author">
+        <span class="author-header-details-message" id="name-author">${author.name}</span>
+        `;
+        this.headerMessages.innerHTML = HTML;
     }
 
     renderMessages(idAuthor) {
@@ -68,6 +83,37 @@ export default class Messages {
         }
 
         this.containerMessages.innerHTML = HTML;
+    }
+
+    sendMessage(message, author) {
+        const inputText = document.getElementById('inputText');
+        inputText.value = '';
+
+        //Get date
+        const now = new Date();
+        const date = now.toLocaleDateString();
+        const time = now.toLocaleTimeString();
+
+        //Render the new Message
+        this.renderSendedMessage(message, time)
+        //Add the message to array
+        
+    }
+
+    renderSendedMessage(message, time) {
+        //Show new box text with message
+        const HTML = `
+        <div class="message">
+            <span class="time-message">${time}</span>
+            <div class="div-message-me">
+                <p class="body-message message-me">
+                    ${message}
+                </p>
+            </div>
+        </div>
+        `;
+
+        this.containerMessages.innerHTML += HTML;
     }
 
 }

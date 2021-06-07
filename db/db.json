@@ -1,338 +1,338 @@
 {
-    "categories": [
-      {
-        "id": "category-dogs",
-        "name": "Perros",
-        "image": "category-dogs.png"
-      },
-      {
-        "id": "category-cats",
-        "name": "Gatos",
-        "image": "category-cats.png"
+  "categories": [
+    {
+      "id": "category-dogs",
+      "name": "Perros",
+      "image": "category-dogs.png"
+    },
+    {
+      "id": "category-cats",
+      "name": "Gatos",
+      "image": "category-cats.png"
+    }
+  ],
+  "pets": [
+    {
+      "id": 1,
+      "categoryId": "category-dogs",
+      "race": "Pastor Alemán",
+      "name": "Pascual",
+      "description": "Esta mal",
+      "gender": "Female",
+      "age": "6 Meses",
+      "address": "Se encuentra en robledo cerca a la quintana",
+      "feature": "Tiene el pelo cafe , ademas tiene una patica mala",
+      "personality": [
+        "Juguetón",
+        "Tierno",
+        "Cariñoso"
+      ],
+      "image": "https://www.elpaisdelosjovenes.com/wp-content/uploads/2015/05/03_02.jpg",
+      "author": {
+          "id": 1,
+          "name": "Mailer Martínez",
+          "image": "author1.png"
       }
-    ],
-    "authors": [
-      {
-        "id": 1,
-        "name": "Mailer Martínez",
-        "image": "author1.png"
-      },
-      {
-        "id": 2,
-        "name": "Juancito Perez",
-        "image": "author2.png"
-      },
-      {
-        "id": 3,
-        "name": "Lola Hernandez",
-        "image": "author3.png"
+    },
+    {
+      "id": 2,
+      "categoryId": "category-dogs",
+      "race": "Bulldogs",
+      "name": "Sacha",
+      "description": "Tiene un ojo herido",
+      "gender": "Female",
+      "age": "12 Meses",
+      "address": "Esta en aranjuez por el parque",
+      "feature": "Es un perro criollo y tiene un ojo herido",
+      "personality": [
+        "Juguetón",
+        "Inquieto",
+        "Tierno"
+      ],
+      "image": "https://www.ecured.cu/images/2/24/Bulldog.JPG",
+      "author": {
+          "id": 2,
+          "name": "Juancito Perez",
+          "image": "author2.png"
       }
-    ]
-    "pets": [
-      {
-        "id": 1,
-        "categoryId": "category-dogs",
-        "race": "Pastor Alemán",
-        "name": "Pascual",
-        "description": "Esta mal",
-        "gender": "Female",
-        "age": "6 Meses",
-        "address": "Se encuentra en robledo cerca a la quintana",
-        "feature": "Tiene el pelo cafe , ademas tiene una patica mala",
-        "personality": [
-          "Juguetón",
-          "Tierno",
-          "Cariñoso"
-        ],
-        "image": "https://www.elpaisdelosjovenes.com/wp-content/uploads/2015/05/03_02.jpg",
-        "author": {
-            "id": 1,
-            "name": "Mailer Martínez",
-            "image": "author1.png"
-        }
-      },
-      {
-        "id": 2,
-        "categoryId": "category-dogs",
-        "race": "Bulldogs",
-        "name": "Sacha",
-        "description": "Tiene un ojo herido",
-        "gender": "Female",
-        "age": "12 Meses",
-        "address": "Esta en aranjuez por el parque",
-        "feature": "Es un perro criollo y tiene un ojo herido",
-        "personality": [
-          "Juguetón",
-          "Inquieto",
-          "Tierno"
-        ],
-        "image": "https://www.ecured.cu/images/2/24/Bulldog.JPG",
-        "author": {
-            "id": 2,
-            "name": "Juancito Perez",
-            "image": "author2.png"
-        }
-      },
-      {
-        "id": 3,
-        "categoryId": "category-dogs",
-        "race": "Labrador Retriever",
-        "name": "scott",
-        "description": "Esta muy herido",
-        "gender": "Male",
-        "age": "24 Meses",
-        "address": "Esta en belen cerca a la udem",
-        "feature": "Es un labrador viejito cola cafe",
-        "personality": [
-          "Juguetón",
-          "Inquieto",
-          "Tierno"
-        ],
-        "image": "http://www.perrosdebusqueda.es/wp-content/uploads/2015/11/Zarpas-herido.jpg",
-        "author": {
-            "id": 3,
-            "name": "Lola Hernandez",
-            "image": "author3.png"
-        }
-      },
-      {
-        "id": 4,
-        "categoryId": "category-dogs",
-        "race": "Poodle",
-        "name": "Toby",
-        "description": "Para adopcion",
-        "gender": "Male",
-        "age": "15 Meses",
-        "address": "Esta en belen cerca a la udem",
-        "feature": "Tiene el pelo cafe, ademas tiene una patica mala",
-        "personality": [
-          "Juguetón",
-          "Inquieto",
-          "Cariñoso"
-        ],
-        "image": "https://perro.shop/wp-content/uploads/Caniche-Poodle.jpg",
-        "author": {
-            "id": 1,
-            "name": "Mailer Martínez",
-            "image": "author1.png"
-        }
-      },
-      {
-        "id": 5,
-        "categoryId": "category-dogs",
-        "race": "Chihuahua",
-        "name": "Boxer",
-        "description": "Se ve que tiene dueño esta muy bien ",
-        "gender": "Male",
-        "age": "18 Meses",
-        "address": "Lo vi el jardin botanico por el lago",
-        "feature": "Es cafe con blanco",
-        "personality": [
-          "Tierno",
-          "Inquieto"
-        ],
-        "image": "http://3.bp.blogspot.com/-XtqcDS3NACY/TyeEFEwPvKI/AAAAAAAAFA0/CPl8ilSKwCI/s200/Boxer+1.JPG",
-        "author": {
-            "id": 2,
-            "name": "Juancito Perez",
-            "image": "author2.png"
-        }
-      },
-      {
-        "id": 6,
-        "categoryId": "category-dogs",
-        "race": "Husky Siberiano",
-        "name": "NN",
-        "description": "Lo dejaron en una caja , con dos piernas rotas",
-        "gender": "Female",
-        "age": "24 Meses",
-        "address": "Esta en la estacion del metro floresta",
-        "feature": "Tiene el pelo cafe con negro y ya esta algo viejito",
-        "personality": [
-          "Juguetón",
-          "Tierno"
-        ],
-        "image": "https://t2.ea.ltmcdn.com/es/images/1/4/9/alimentacion_y_cuidados_del_husky_siberiano_cachorro_24941_600_square.jpg",
-        "author": {
-            "id": 3,
-            "name": "Lola Hernandez",
-            "image": "author3.png"
-        }
-      },
-      {
-        "id": 7,
-        "categoryId": "category-dogs",
-        "race": "Galgo Inglés",
-        "name": "Toby",
-        "description": "Parece que tiene dueño por que esta muy bien ",
-        "gender": "Male",
-        "age": "3 Meses",
-        "address": "lo vi por el exito de robledo",
-        "feature": "Es un perro criollo de color cafe de raza media",
-        "personality": [
-          "Juguetón",
-          "Inquieto",
-          "Tierno"
-        ],
-        "image": "https://perro.shop/wp-content/uploads/greyhound-galgo-ingles.jpg",
-        "author": {
-            "id": 1,
-            "name": "Mailer Martínez",
-            "image": "author1.png"
-        }
-      },
-      {
-        "id": 8,
-        "categoryId": "category-dogs",
-        "race": "Criollo",
-        "name": "Kiko",
-        "description": "En adopcion",
-        "gender": "Male",
-        "age": "8 Meses",
-        "address": "Estoy en bello",
-        "feature": "Perro pitbull",
-        "personality": [
-          "Juguetón",
-          "Inquieto",
-          "Tierno"
-        ],
-        "image": "http://i58.photobucket.com/albums/g254/big-T1/pitbull_pup11.jpg",
-        "author": {
-            "id": 2,
-            "name": "Juancito Perez",
-            "image": "author2.png"
-        }
-      },
-      {
-        "id": 9,
-        "categoryId": "category-cats",
-        "race": "Siamés",
-        "name": "Icaro",
-        "description": "Es un gatico cachorro que esta en la calle",
-        "gender": "Male",
-        "age": "19 Meses",
-        "address": "Esta en belen por los lados de la udem",
-        "feature": "Es pequeño y el pelo lo tiene negro",
-        "personality": [
-          "Juguetón",
-          "Inquieto",
-          "Tierno"
-        ],
-        "image": "http://static.consumer.es/www/imgs/2013/07/adoptar-gatos-cachorros-felinos-animales-mascotas-adopcion-acogida-art.jpg",
-        "author": {
-            "id": 3,
-            "name": "Lola Hernandez",
-            "image": "author3.png"
-        }
-      },
-      {
-        "id": 10,
-        "categoryId": "category-cats",
-        "race": "Criollo",
-        "name": "Nica",
-        "description": "Es una gatica que acabo de dar a luz",
-        "gender": "Female",
-        "age": "13 Meses",
-        "address": "Parque del poblado",
-        "feature": "Es una gata blanca y tiene 6 gaticos cachorros",
-        "personality": [
-          "Juguetón",
-          "Tierno",
-          "Cariñoso"
-        ],
-        "image": "https://www.dogalize.com/wp-content/uploads/2017/02/image1.jpg",
-        "author": {
-            "id": 1,
-            "name": "Mailer Martínez",
-            "image": "author1.png"
-        }
-      },
-      {
-        "id": 11,
-        "categoryId": "category-cats",
-        "race": "Persa",
-        "name": "Sas",
-        "description": "Para dar en adopcion",
-        "gender": "Female",
-        "age": "5 Meses",
-        "address": "Esta en el barrio los colores",
-        "feature": "Tiene el cabello gris con blanco ",
-        "personality": [
-          "Inquieto",
-          "Tierno"
-        ],
-        "image": "http://misanimales.com/wp-content/uploads/2015/01/cascabel-gato.jpg",
-        "author": {
-            "id": 2,
-            "name": "Juancito Perez",
-            "image": "author2.png"
-        }
-      },
-      {
-        "id": 12,
-        "categoryId": "category-cats",
-        "race": "Bengala",
-        "name": "NN",
-        "description": "Esta mal",
-        "gender": "Female",
-        "age": "7 Meses",
-        "address": "lo vi por la canalizacion del estadio",
-        "feature": "Tiene el pelo cafe con blanco , ademas tiene una patica mala",
-        "personality": [
-          "Juguetón",
-          "Inquieto",
-          "Cariñoso"
-        ],
-        "image": "http://mascotas-static.hola.com/gatos/files/2012/10/stray-cat-169113_1280.jpg",
-        "author": {
-            "id": 3,
-            "name": "Lola Hernandez",
-            "image": "author3.png"
-        }
-      },
-      {
-        "id": 13,
-        "categoryId": "category-cats",
-        "race": "Ragdoll",
-        "name": "Tobias",
-        "description": "Para adopcion",
-        "gender": "Male",
-        "age": "36 Meses",
-        "address": "en la perla",
-        "feature": "Es un cachorro",
-        "personality": [
-          "Juguetón",
-          "Inquieto",
-          "Tierno"
-        ],
-        "image": "https://t2.ea.ltmcdn.com/es/images/1/9/6/img_como_banar_a_un_gato_ragdoll_20691_600.jpg",
-        "author": {
-            "id": 1,
-            "name": "Mailer Martínez",
-            "image": "author1.png"
-        }
-      },
-      {
-        "id": 14,
-        "categoryId": "category-cats",
-        "race": "Esfinge",
-        "name": "sin name",
-        "description": "Para dar en adopcion",
-        "gender": "Female",
-        "age": "4 Meses",
-        "address": "Esta en belen cerca al parque",
-        "feature": "Tiene apenas un mes de nacido",
-        "personality": [
-          "Juguetón",
-          "Inquieto",
-          "Tierno"
-        ],
-        "image": "https://i1.wp.com/clubdelgato.com/wp-content/uploads/2020/10/640px-Cat_Sphynx._Kittens._img_11.jpg?fit=640%2C447&ssl=1",
-        "author": {
-            "id": 1,
-            "name": "Mailer Martínez",
-            "image": "author1.png"
-        }
+    },
+    {
+      "id": 3,
+      "categoryId": "category-dogs",
+      "race": "Labrador Retriever",
+      "name": "scott",
+      "description": "Esta muy herido",
+      "gender": "Male",
+      "age": "24 Meses",
+      "address": "Esta en belen cerca a la udem",
+      "feature": "Es un labrador viejito cola cafe",
+      "personality": [
+        "Juguetón",
+        "Inquieto",
+        "Tierno"
+      ],
+      "image": "http://www.perrosdebusqueda.es/wp-content/uploads/2015/11/Zarpas-herido.jpg",
+      "author": {
+          "id": 3,
+          "name": "Lola Hernandez",
+          "image": "author3.png"
       }
-    ]
-  }
+    },
+    {
+      "id": 4,
+      "categoryId": "category-dogs",
+      "race": "Poodle",
+      "name": "Toby",
+      "description": "Para adopcion",
+      "gender": "Male",
+      "age": "15 Meses",
+      "address": "Esta en belen cerca a la udem",
+      "feature": "Tiene el pelo cafe, ademas tiene una patica mala",
+      "personality": [
+        "Juguetón",
+        "Inquieto",
+        "Cariñoso"
+      ],
+      "image": "https://perro.shop/wp-content/uploads/Caniche-Poodle.jpg",
+      "author": {
+          "id": 1,
+          "name": "Mailer Martínez",
+          "image": "author1.png"
+      }
+    },
+    {
+      "id": 5,
+      "categoryId": "category-dogs",
+      "race": "Chihuahua",
+      "name": "Boxer",
+      "description": "Se ve que tiene dueño esta muy bien ",
+      "gender": "Male",
+      "age": "18 Meses",
+      "address": "Lo vi el jardin botanico por el lago",
+      "feature": "Es cafe con blanco",
+      "personality": [
+        "Tierno",
+        "Inquieto"
+      ],
+      "image": "http://3.bp.blogspot.com/-XtqcDS3NACY/TyeEFEwPvKI/AAAAAAAAFA0/CPl8ilSKwCI/s200/Boxer+1.JPG",
+      "author": {
+          "id": 2,
+          "name": "Juancito Perez",
+          "image": "author2.png"
+      }
+    },
+    {
+      "id": 6,
+      "categoryId": "category-dogs",
+      "race": "Husky Siberiano",
+      "name": "NN",
+      "description": "Lo dejaron en una caja , con dos piernas rotas",
+      "gender": "Female",
+      "age": "24 Meses",
+      "address": "Esta en la estacion del metro floresta",
+      "feature": "Tiene el pelo cafe con negro y ya esta algo viejito",
+      "personality": [
+        "Juguetón",
+        "Tierno"
+      ],
+      "image": "https://t2.ea.ltmcdn.com/es/images/1/4/9/alimentacion_y_cuidados_del_husky_siberiano_cachorro_24941_600_square.jpg",
+      "author": {
+          "id": 3,
+          "name": "Lola Hernandez",
+          "image": "author3.png"
+      }
+    },
+    {
+      "id": 7,
+      "categoryId": "category-dogs",
+      "race": "Galgo Inglés",
+      "name": "Toby",
+      "description": "Parece que tiene dueño por que esta muy bien ",
+      "gender": "Male",
+      "age": "3 Meses",
+      "address": "lo vi por el exito de robledo",
+      "feature": "Es un perro criollo de color cafe de raza media",
+      "personality": [
+        "Juguetón",
+        "Inquieto",
+        "Tierno"
+      ],
+      "image": "https://perro.shop/wp-content/uploads/greyhound-galgo-ingles.jpg",
+      "author": {
+          "id": 1,
+          "name": "Mailer Martínez",
+          "image": "author1.png"
+      }
+    },
+    {
+      "id": 8,
+      "categoryId": "category-dogs",
+      "race": "Criollo",
+      "name": "Kiko",
+      "description": "En adopcion",
+      "gender": "Male",
+      "age": "8 Meses",
+      "address": "Estoy en bello",
+      "feature": "Perro pitbull",
+      "personality": [
+        "Juguetón",
+        "Inquieto",
+        "Tierno"
+      ],
+      "image": "http://i58.photobucket.com/albums/g254/big-T1/pitbull_pup11.jpg",
+      "author": {
+          "id": 2,
+          "name": "Juancito Perez",
+          "image": "author2.png"
+      }
+    },
+    {
+      "id": 9,
+      "categoryId": "category-cats",
+      "race": "Siamés",
+      "name": "Icaro",
+      "description": "Es un gatico cachorro que esta en la calle",
+      "gender": "Male",
+      "age": "19 Meses",
+      "address": "Esta en belen por los lados de la udem",
+      "feature": "Es pequeño y el pelo lo tiene negro",
+      "personality": [
+        "Juguetón",
+        "Inquieto",
+        "Tierno"
+      ],
+      "image": "http://static.consumer.es/www/imgs/2013/07/adoptar-gatos-cachorros-felinos-animales-mascotas-adopcion-acogida-art.jpg",
+      "author": {
+          "id": 3,
+          "name": "Lola Hernandez",
+          "image": "author3.png"
+      }
+    },
+    {
+      "id": 10,
+      "categoryId": "category-cats",
+      "race": "Criollo",
+      "name": "Nica",
+      "description": "Es una gatica que acabo de dar a luz",
+      "gender": "Female",
+      "age": "13 Meses",
+      "address": "Parque del poblado",
+      "feature": "Es una gata blanca y tiene 6 gaticos cachorros",
+      "personality": [
+        "Juguetón",
+        "Tierno",
+        "Cariñoso"
+      ],
+      "image": "https://www.dogalize.com/wp-content/uploads/2017/02/image1.jpg",
+      "author": {
+          "id": 1,
+          "name": "Mailer Martínez",
+          "image": "author1.png"
+      }
+    },
+    {
+      "id": 11,
+      "categoryId": "category-cats",
+      "race": "Persa",
+      "name": "Sas",
+      "description": "Para dar en adopcion",
+      "gender": "Female",
+      "age": "5 Meses",
+      "address": "Esta en el barrio los colores",
+      "feature": "Tiene el cabello gris con blanco ",
+      "personality": [
+        "Inquieto",
+        "Tierno"
+      ],
+      "image": "http://misanimales.com/wp-content/uploads/2015/01/cascabel-gato.jpg",
+      "author": {
+          "id": 2,
+          "name": "Juancito Perez",
+          "image": "author2.png"
+      }
+    },
+    {
+      "id": 12,
+      "categoryId": "category-cats",
+      "race": "Bengala",
+      "name": "NN",
+      "description": "Esta mal",
+      "gender": "Female",
+      "age": "7 Meses",
+      "address": "lo vi por la canalizacion del estadio",
+      "feature": "Tiene el pelo cafe con blanco , ademas tiene una patica mala",
+      "personality": [
+        "Juguetón",
+        "Inquieto",
+        "Cariñoso"
+      ],
+      "image": "http://mascotas-static.hola.com/gatos/files/2012/10/stray-cat-169113_1280.jpg",
+      "author": {
+          "id": 3,
+          "name": "Lola Hernandez",
+          "image": "author3.png"
+      }
+    },
+    {
+      "id": 13,
+      "categoryId": "category-cats",
+      "race": "Ragdoll",
+      "name": "Tobias",
+      "description": "Para adopcion",
+      "gender": "Male",
+      "age": "36 Meses",
+      "address": "en la perla",
+      "feature": "Es un cachorro",
+      "personality": [
+        "Juguetón",
+        "Inquieto",
+        "Tierno"
+      ],
+      "image": "https://t2.ea.ltmcdn.com/es/images/1/9/6/img_como_banar_a_un_gato_ragdoll_20691_600.jpg",
+      "author": {
+          "id": 1,
+          "name": "Mailer Martínez",
+          "image": "author1.png"
+      }
+    },
+    {
+      "id": 14,
+      "categoryId": "category-cats",
+      "race": "Esfinge",
+      "name": "sin name",
+      "description": "Para dar en adopcion",
+      "gender": "Female",
+      "age": "4 Meses",
+      "address": "Esta en belen cerca al parque",
+      "feature": "Tiene apenas un mes de nacido",
+      "personality": [
+        "Juguetón",
+        "Inquieto",
+        "Tierno"
+      ],
+      "image": "https://i1.wp.com/clubdelgato.com/wp-content/uploads/2020/10/640px-Cat_Sphynx._Kittens._img_11.jpg?fit=640%2C447&ssl=1",
+      "author": {
+          "id": 1,
+          "name": "Mailer Martínez",
+          "image": "author1.png"
+      }
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Mailer Martínez",
+      "image": "author1.png"
+    },
+    {
+      "id": 2,
+      "name": "Juancito Perez",
+      "image": "author2.png"
+    },
+    {
+      "id": 3,
+      "name": "Lola Hernandez",
+      "image": "author3.png"
+    }
+  ]
+}
