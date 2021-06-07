@@ -110,7 +110,7 @@ export default class Messages {
         const sender = 'me';
         this.renderSendedMessage(message, time, sender);
         //Create a automatic response if message don't includes a "No" string
-        !message.toLowerCase().includes('no') ? this.responseAutomatic(author, date, time) : '';
+        !message.toLowerCase().includes('#no') ? this.responseAutomatic(author, date, time) : '';
         
         //Go to end page
         this.goToEnd();
@@ -154,7 +154,7 @@ export default class Messages {
     }
 
     responseAutomatic(author, date, time) {
-        const message = "Hola, soy: "+author.name+", te escribí a las "+time+". Si no quieres ver una respuesta, escribe la palabra No en tu mensaje"
+        const message = "Hola, soy: "+author.name+", te escribí a las "+time+". Si no quieres ver una respuesta, escribe #No en tu mensaje"
         let object = 
         {
             sender: "you",
