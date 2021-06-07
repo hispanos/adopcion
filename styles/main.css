@@ -571,10 +571,13 @@ h1, h2, h3, h4, h5, h6, span, p, img {
 }
 
 .rigth-div-message {
+    box-sizing: border-box;
     margin: 0 8px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 80px;
+    justify-items: center;
 }
 
 .person-time-div-message {

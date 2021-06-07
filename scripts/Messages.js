@@ -189,4 +189,32 @@ export default class Messages {
         window.scrollTo(0,document.querySelector("#container").scrollHeight);
     }
 
+    renderChats() {
+        const containerChats = document.getElementById('container-list-messages');
+        let HTML = '';
+        //If exist messages 
+        if (Array.isArray(this.messages) && this.messages.length) {
+            this.messages.forEach(element => {
+                HTML += `
+                <div class="div-message" key="${element.author.id}">
+                    <img src="./images/${element.author.image}" alt="Perfil Usuario" class="img-div-message">
+                    <div class="rigth-div-message">
+                        <div class="person-time-div-message">
+                            <h4 class="person-div-message">${element.author.name}</h4>
+                            <span class="time-div-message">${element.messages[element.messages.length - 1].time}</span>
+                        </div>
+                        <p class="text-div-message">${element.messages[element.messages.length - 1].message}</p>
+                    </div>
+                    <img src="./images/next.png" alt="Ver Mensaje" class="arrow-div-message">
+                </div>
+                `;
+            });
+        }else {
+            //If don't exist messages
+            HTML = '<h3>No existen mensajes todavía.</h3>'
+        }
+
+        containerChats.innerHTML = HTML;
+    }
+
 }

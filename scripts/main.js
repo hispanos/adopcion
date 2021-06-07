@@ -34,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if(URI === '/messagesDetail.html' || URI === '/adopcion/messagesDetail.html') {
         renderMessagesContent();
     }
+
+    if(URI === '/messages.html' || URI === '/adopcion/messages.html') {
+        renderChats();
+    }
     
     //Set Pets Object as model to favorites
     favorites.setModel(pets);
@@ -126,4 +130,8 @@ const renderMessagesContent = async () => {
     goBack.addEventListener('click', () => {
         history.go(-1);
     })
+}
+
+const renderChats = () => {
+    messages.renderChats();
 }
