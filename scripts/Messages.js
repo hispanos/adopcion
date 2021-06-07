@@ -63,6 +63,8 @@ export default class Messages {
         }
 
         this.containerMessages.innerHTML = HTML;
+        //Go to end page
+        this.goToEnd();
     }
 
     sendMessage(message, author) {
@@ -109,6 +111,8 @@ export default class Messages {
         this.renderSendedMessage(message, time, sender);
         //Create a automatic response
         this.responseAutomatic(author, date, time);
+        //Go to end page
+        this.goToEnd();
     }
 
     createFirstMessage(author, date, time, message) {
@@ -153,7 +157,7 @@ export default class Messages {
         {
             sender: "you",
             time: date + '-' + time,
-            message: "Este es un mensaje automático a las: "+time
+            message: "Hola, soy: "+author.name+", te escribí a las "+time
         }
 
         //Updated the array
@@ -167,6 +171,10 @@ export default class Messages {
         //Render the new Message
         const sender = 'you';
         this.renderSendedMessage(object.message, time, sender)
+    }
+
+    goToEnd() {
+        window.scrollTo(0,document.querySelector("#container").scrollHeight);
     }
 
 }
