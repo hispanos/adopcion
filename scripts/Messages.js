@@ -6,27 +6,7 @@ export default class Messages {
         this.containerMessages = document.getElementById('container-messages');
         this.messages = JSON.parse(localStorage.getItem('messages'));
         if (!this.messages || this.messages.length < 1) {
-            this.messages = [
-                {
-                    author: {
-                        id: 1,
-                        name: "Mailer Martínez",
-                        image: "author1.png"
-                    },
-                    messages: [
-                        {
-                            sender: "me",
-                            time: "04:00 pm",
-                            message: "Este es un mensaje mío"
-                        },
-                        {
-                            sender: "author",
-                            time: "04:00 pm",
-                            message: "Este es un mensaje del autor"
-                        }
-                    ]
-                }
-            ];
+            this.messages = [];
         }
     }
 
@@ -94,19 +74,71 @@ export default class Messages {
         const date = now.toLocaleDateString();
         const time = now.toLocaleTimeString();
 
-        //Render the new Message
-        this.renderSendedMessage(message, time)
         //Add the message to array
-        
+        //Chech if exist messages generally
+        if (Array.isArray(this.messages) && this.messages.length) {
+            //Filter messages by Author Id
+            const data = this.messages.filter( item => item.author.id === author.id );
+            //If exist messages with this Id
+            if (Array.isArray(data) && data.length) {
+                let object = 
+                {
+                    sender: "me",
+                    time: date + '-' + time,
+                    message: message
+                }
+
+                //Updated the array
+                this.messages.forEach((element, index) => {
+                    if (element.author.id === author.id) {
+                        this.messages[index].messages.push(object);
+                        localStorage.setItem('messages', JSON.stringify(this.messages));
+                    }
+                });
+            }else {
+                //If don't wxist messages with this autor
+                this.createFirstMessage(author, date, time, message);
+            }
+        }else {
+            //If don't exist messages
+            this.createFirstMessage(author, date, time, message);
+        }
+
+        //Render the new Message
+        const sender = 'me';
+        this.renderSendedMessage(message, time, sender);
+        //Create a automatic response
+        this.responseAutomatic(author, date, time);
     }
 
-    renderSendedMessage(message, time) {
+    createFirstMessage(author, date, time, message) {
+        this.containerMessages.innerHTML = '';
+        let object = 
+        {
+            author: {
+                id: author.id,
+                name: author.name,
+                image: author.image
+            },
+            messages: [
+                {
+                    sender: "me",
+                    time: date + '-' + time,
+                    message: message
+                }
+            ]
+        }
+        this.messages.push(object);
+        localStorage.setItem('messages', JSON.stringify(this.messages));
+    }
+
+    renderSendedMessage(message, time, sender) {
         //Show new box text with message
         const HTML = `
         <div class="message">
             <span class="time-message">${time}</span>
-            <div class="div-message-me">
-                <p class="body-message message-me">
+            <div class="div-message-${sender}">
+                <p class="body-message message-${sender}">
                     ${message}
                 </p>
             </div>
@@ -114,6 +146,27 @@ export default class Messages {
         `;
 
         this.containerMessages.innerHTML += HTML;
+    }
+
+    responseAutomatic(author, date, time) {
+        let object = 
+        {
+            sender: "you",
+            time: date + '-' + time,
+            message: "Este es un mensaje automático a las: "+time
+        }
+
+        //Updated the array
+        this.messages.forEach((element, index) => {
+            if (element.author.id === author.id) {
+                this.messages[index].messages.push(object);
+                localStorage.setItem('messages', JSON.stringify(this.messages));
+            }
+        });
+
+        //Render the new Message
+        const sender = 'you';
+        this.renderSendedMessage(object.message, time, sender)
     }
 
 }
