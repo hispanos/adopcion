@@ -110,7 +110,7 @@ export default class Messages {
         const sender = 'me';
         this.renderSendedMessage(message, time, sender);
         //Create a automatic response if message don't includes a "No" string
-        !message.toLowerCase().includes('#no') ? this.responseAutomatic(author, date, time) : '';
+        !message.toLowerCase().includes('#no') ? this.responseAutomatic(author) : '';
         
         //Go to end page
         this.goToEnd();
@@ -153,26 +153,36 @@ export default class Messages {
         this.containerMessages.innerHTML += HTML;
     }
 
-    responseAutomatic(author, date, time) {
-        const message = "Hola, soy: "+author.name+", te escribí a las "+time+". Si no quieres ver una respuesta, escribe #No en tu mensaje"
-        let object = 
-        {
-            sender: "you",
-            time: date + '-' + time,
-            message: message
-        }
-
-        //Updated the array
-        this.messages.forEach((element, index) => {
-            if (element.author.id === author.id) {
-                this.messages[index].messages.push(object);
-                localStorage.setItem('messages', JSON.stringify(this.messages));
+    responseAutomatic(author) {
+        //Wait 3 seconds
+        setTimeout(() => {
+            //Get date
+            const now = new Date();
+            const date = now.toLocaleDateString();
+            const time = now.toLocaleTimeString();
+    
+            const message = "Hola, soy: "+author.name+", te escribí a las "+time+". Si no quieres ver una respuesta, escribe #No en tu mensaje"
+            let object = 
+            {
+                sender: "you",
+                time: date + '-' + time,
+                message: message
             }
-        });
-
-        //Render the new Message
-        const sender = 'you';
-        this.renderSendedMessage(object.message, time, sender)
+    
+            //Updated the array
+            this.messages.forEach((element, index) => {
+                if (element.author.id === author.id) {
+                    this.messages[index].messages.push(object);
+                    localStorage.setItem('messages', JSON.stringify(this.messages));
+                }
+            });
+    
+            //Render the new Message
+            const sender = 'you';
+            this.renderSendedMessage(object.message, time, sender)
+            //Go to end page
+            this.goToEnd();
+        }, 3000)
     }
 
     goToEnd() {

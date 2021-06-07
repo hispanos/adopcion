@@ -25,18 +25,22 @@ export default class Pets {
     renderListPets(listPets) {
         this.containerPetList.innerHTML = '';
         let style = '';
-        listPets.forEach((pet, index) => {
-            index % 2 === 0 ? style = 'level-1' : style = 'level-2'
-            const div = `
-            <div class="pet ${style}" key=${pet.id}>
-                <div class="background-pet"></div>
-                <img src="${pet.image}" alt="${pet.name}" class="img-pet">
-                <span class="pet-name">${pet.name}</span>
-                <span class="pet-race">${pet.race}</span>
-            </div>
-            `;
-            this.containerPetList.innerHTML += div;
-        });
+        if (Array.isArray(listPets) && listPets.length) {
+            listPets.forEach((pet, index) => {
+                index % 2 === 0 ? style = 'level-1' : style = 'level-2'
+                const div = `
+                <div class="pet ${style}" key=${pet.id}>
+                    <div class="background-pet"></div>
+                    <img src="${pet.image}" alt="${pet.name}" class="img-pet">
+                    <span class="pet-name">${pet.name}</span>
+                    <span class="pet-race">${pet.race}</span>
+                </div>
+                `;
+                this.containerPetList.innerHTML += div;
+            });
+        }else {
+            this.containerPetList.innerHTML = '<h3>Oops, parece que no hay nada por aquí</h3>';
+        }
     }
 
     async getDetails(idPet) {
