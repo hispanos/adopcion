@@ -3,6 +3,7 @@ import Categories from './Categories.js'
 import Favorites from './Favorites.js';
 import Messages from './Messages.js';
 import Authors from './Authors.js';
+import Profile from './Profile.js';
 
 const URI = window.location.pathname;
 const pets = new Pets();
@@ -10,6 +11,7 @@ const categories = new Categories();
 const favorites = new Favorites();
 const messages = new Messages();
 const authors = new Authors();
+const profile = new Profile();
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,6 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(URI === '/messages.html' || URI === '/adopcion/messages.html') {
         renderChats();
+    }
+
+    if(URI === '/profile.html' || URI === '/adopcion/profile.html') {
+        getProfile();
     }
     
     //Set Pets Object as model to favorites
@@ -156,4 +162,23 @@ const onClickChat = (e) => {
     }
 
     window.location.href = `./messagesDetail.html?idAuthor=${idAuthor}`;
+}
+
+const getProfile = () => {
+    profile.renderProfile();
+    const form = document.getElementById('form-profile');
+    form.addEventListener('submit', (e) => { onSubmitProfile(e) });
+    const image = document.getElementById('img-profile');
+    image.addEventListener('click', (e) => { onClickImageProfile(e) })
+}
+
+const onSubmitProfile = (e) => {
+    e.preventDefault();
+    profile.saveProfile();
+}
+
+const onClickImageProfile = (e) => {
+    const inputImage = document.getElementById('input-photo-profile');
+    inputImage.click();
+    profile.changeImage();
 }
