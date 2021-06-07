@@ -1,11 +1,13 @@
 import Pets from './Pets.js';
 import Categories from './Categories.js'
 import Favorites from './Favorites.js';
+import Messages from './Messages.js';
 
 const URI = window.location.pathname;
 const pets = new Pets();
 const categories = new Categories();
 const favorites = new Favorites();
+const messages = new Messages();
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(URI === '/favorites.html' || URI === '/adopcion/favorites.html') {
         renderFavorites();
+    }
+
+    if(URI === '/messagesDetail.html' || URI === '/adopcion/messagesDetail.html') {
+        renderMessagesContent();
     }
     
     //Set Pets Object as model to favorites
@@ -96,4 +102,10 @@ const renderFavorites = () => {
     divPet.forEach(div => {
         div.addEventListener('click', (e) => { onClickPet(e) })
     });
+}
+
+const renderMessagesContent = () => {
+    let params = new URLSearchParams(location.search);
+    const idAuthor = parseInt(params.get('idAuthor'));
+    messages.renderMessages(idAuthor);
 }
