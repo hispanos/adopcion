@@ -633,7 +633,8 @@ h1, h2, h3, h4, h5, h6, span, p, img {
     justify-content: center;
     align-items: center;
     padding: 24px;
-    position: absolute;
+    position: sticky;
+    top: 0;
 }
 
 .img-header-deatails-message {
@@ -670,14 +671,16 @@ h1, h2, h3, h4, h5, h6, span, p, img {
     line-height: 24px;
     letter-spacing: 0.005em;
     color: #535353;
-    margin: 20px 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position:sticky;
+    bottom: 0px;
 }
 
 #container-messages {
     box-sizing: border-box;
     width: 100%;
-    position: absolute;
-    top: 144px;
     display: flex;
     flex-direction: column;
 }
