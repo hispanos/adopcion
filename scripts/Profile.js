@@ -31,9 +31,8 @@ export default class Profile {
     //Save the profile at localstorage amd object
     saveProfile() {
         this.profile.name = this.name.value;
-        this.profile.name = this.name.value,
         this.profile.lastname = this.lastname.value,
-        this.email.email = this.email.value
+        this.profile.email = this.email.value
         //Save at localstorage
         localStorage.setItem('profile', JSON.stringify(this.profile));
         //Update the view
@@ -45,13 +44,23 @@ export default class Profile {
         this.inputImage.addEventListener('change', () => {
             const files = this.inputImage.files;
             if (files && files.length) {
-                const newImage = files[0];
-                const urlNewImage = URL.createObjectURL(newImage);
-                this.image.src = urlNewImage;
-                //Set the image at object Profile
-                this.profile.image = urlNewImage;
-                //Save
-                this.saveProfile();
+                const file = files[0];
+                //If file is a image
+                if (file.type.match('image.*')) {
+                    //Set the image to view
+                    const urlNewImage = URL.createObjectURL(file);
+                    this.image.src = urlNewImage;
+                    //Storage the image to base64
+                    let reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = () => {
+                        //Set the image at object Profile
+                        this.profile.image = reader.result;
+                        console.log(this.profile.image);
+                        //Save
+                        this.saveProfile();
+                    }
+                }
             }
         })
     }
