@@ -16,7 +16,7 @@ export default class Messages {
 
     renderHeaderMessage(author) {
         const HTML = `
-        <a href="./messages.html" class="link-back"><img src="./images/back.png" alt="Atrás"></a>
+        <a href="#" class="link-back" id="go-back"><img src="./images/back.png" alt="Atrás"></a>
         <img src="./images/${author.image}" alt="Author" class="img-header-deatails-message" id="image-author">
         <span class="author-header-details-message" id="name-author">${author.name}</span>
         `;

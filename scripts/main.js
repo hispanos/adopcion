@@ -121,4 +121,9 @@ const renderMessagesContent = async () => {
             messages.sendMessage(message, author);
         }
     })
+
+    const goBack = document.getElementById('go-back');
+    goBack.addEventListener('click', () => {
+        history.go(-1);
+    })
 }
