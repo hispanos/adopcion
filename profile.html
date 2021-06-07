@@ -16,8 +16,26 @@
         <div class="container-select">
             <h2 class="title-select-options">Perfil</h2>
             <div id="container-profile">
-                <!-- Filled from Javascript -->
-
+                <div class="header-profile">
+                    <img src="./images/author1.png" alt="Imagen de perfil" class="img-profile">
+                    <span class="name-profile">Su Nombre</span>
+                    <span class="name-profile">Actualice sus datos</span>
+                </div>
+                <form action="" id="form-profile">
+                    <div class="input-group-profile">
+                        <label class="label-form-profile" for="name">Nombre</label>
+                        <input type="text" class="input-form-profile" placeholder="Sus Nombres" id="name">
+                    </div>
+                    <div class="input-group-profile">
+                        <label class="label-form-profile" for="lastname">Apellido</label>
+                        <input type="text" class="input-form-profile" placeholder="Sus Apellidos" id="lastname">
+                    </div>
+                    <div class="input-group-profile">
+                        <label class="label-form-profile" for="email">Correo</label>
+                        <input type="email" class="input-form-profile" placeholder="Su Correo" id="email">
+                    </div>
+                    <button type="submit" id="submit-form-profile">Guardar</button>
+                </form>
             </div>
         </div>
 
