@@ -11,6 +11,23 @@
         "image": "category-cats.png"
       }
     ],
+    "authors": [
+      {
+        "id": 1,
+        "name": "Mailer Martínez",
+        "image": "author1.png"
+      },
+      {
+        "id": 2,
+        "name": "Juancito Perez",
+        "image": "author2.png"
+      },
+      {
+        "id": 3,
+        "name": "Lola Hernandez",
+        "image": "author3.png"
+      }
+    ]
     "pets": [
       {
         "id": 1,
@@ -51,7 +68,7 @@
         ],
         "image": "https://www.ecured.cu/images/2/24/Bulldog.JPG",
         "author": {
-            "id": 1,
+            "id": 2,
             "name": "Juancito Perez",
             "image": "author2.png"
         }
@@ -73,7 +90,7 @@
         ],
         "image": "http://www.perrosdebusqueda.es/wp-content/uploads/2015/11/Zarpas-herido.jpg",
         "author": {
-            "id": 1,
+            "id": 3,
             "name": "Lola Hernandez",
             "image": "author3.png"
         }
@@ -116,7 +133,7 @@
         ],
         "image": "http://3.bp.blogspot.com/-XtqcDS3NACY/TyeEFEwPvKI/AAAAAAAAFA0/CPl8ilSKwCI/s200/Boxer+1.JPG",
         "author": {
-            "id": 1,
+            "id": 2,
             "name": "Juancito Perez",
             "image": "author2.png"
         }
@@ -137,7 +154,7 @@
         ],
         "image": "https://t2.ea.ltmcdn.com/es/images/1/4/9/alimentacion_y_cuidados_del_husky_siberiano_cachorro_24941_600_square.jpg",
         "author": {
-            "id": 1,
+            "id": 3,
             "name": "Lola Hernandez",
             "image": "author3.png"
         }
@@ -181,7 +198,7 @@
         ],
         "image": "http://i58.photobucket.com/albums/g254/big-T1/pitbull_pup11.jpg",
         "author": {
-            "id": 1,
+            "id": 2,
             "name": "Juancito Perez",
             "image": "author2.png"
         }
@@ -203,7 +220,7 @@
         ],
         "image": "http://static.consumer.es/www/imgs/2013/07/adoptar-gatos-cachorros-felinos-animales-mascotas-adopcion-acogida-art.jpg",
         "author": {
-            "id": 1,
+            "id": 3,
             "name": "Lola Hernandez",
             "image": "author3.png"
         }
@@ -246,7 +263,7 @@
         ],
         "image": "http://misanimales.com/wp-content/uploads/2015/01/cascabel-gato.jpg",
         "author": {
-            "id": 1,
+            "id": 2,
             "name": "Juancito Perez",
             "image": "author2.png"
         }
@@ -268,7 +285,7 @@
         ],
         "image": "http://mascotas-static.hola.com/gatos/files/2012/10/stray-cat-169113_1280.jpg",
         "author": {
-            "id": 1,
+            "id": 3,
             "name": "Lola Hernandez",
             "image": "author3.png"
         }
